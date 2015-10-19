@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+    
+    
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="CSS/track.css">
+    
+ <script async defer src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=&amp;callback=initMap"></script>
+  <head>
+      <title>Walking App</title>
+      
+    
+ 
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Track Route</span>
+      </div>
+  </header>
+     <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Menu</span>
+    <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Home</a>
+        <a class="mdl-navigation__link" href="view.html">Saved Routes</a>
+        <a class="mdl-navigation__link" href="">About</a>
+    </nav>
+    </div>     
+  </div>
+
+  </head>
+    
+    
+  <body>
+      <div id="techDetails"><div id="tech"></div></div>
+      <div id="floating-panel">
+        <div id="buttonContainer">
+      <button id="track" button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="toggleTrack()">Start Tracking</button>
+      <button id="save" button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="save()">Save Route</button>
+      <button id="clear" button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="clearRoute()">Clear Route</button>
+     </div>
+    </div>
+    <div id="map"></div>
+      <div id="detailContainer"><br><div id="details"></div></div>
+   </body>
+<script src="scripts/track.js"></script> 
+    
+</html>
